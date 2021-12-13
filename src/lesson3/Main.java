@@ -51,7 +51,11 @@ public class Main{
 
     private static String offComputer(Computer computer) {
         String answer;
-        if (random() == 1) {
+
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Введите 0 или 1, если значения совпадут - компьютер выживет :)");
+        int num = scan.nextInt();
+        if (num != random()) {
             computer.setMaxWorkingCount(0);
             return answer = "Компьютер сгорел при выключении";
         }
@@ -69,7 +73,10 @@ public class Main{
             return answer = "Один из компонентов пк повреждён, компьютер сломан";
         }
         else {
-            if (random() == 1) {
+            Scanner scan = new Scanner(System.in);
+            System.out.println("Введите 0 или 1, если значения совпадут - компьютер выживет :)");
+            int num = scan.nextInt();
+            if (num != random()) {
                 computer.setMaxWorkingCount(0);
                 return answer = "Компьютер сгорел при влючении";
             }
