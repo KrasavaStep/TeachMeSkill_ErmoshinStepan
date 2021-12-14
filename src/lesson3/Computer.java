@@ -1,5 +1,6 @@
 package lesson3;
 
+import java.util.Objects;
 import java.util.Scanner;
 
 public class Computer{
@@ -12,6 +13,7 @@ public class Computer{
 
     public Computer() {
     }
+
 
     public Cpu getCpu() {
         return cpu;
@@ -94,5 +96,18 @@ public class Computer{
         double random = Math.random();
         int number = (int) Math.round(random);
         return number;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Computer computer = (Computer) o;
+        return Double.compare(computer.cost, cost) == 0 && maxWorkingCount == computer.maxWorkingCount && Objects.equals(type, computer.type) && Objects.equals(brand, computer.brand) && Objects.equals(model, computer.model) && Objects.equals(cpu, computer.cpu) && Objects.equals(hdd, computer.hdd) && Objects.equals(ram, computer.ram);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(type, cost, brand, model, maxWorkingCount, cpu, hdd, ram);
     }
 }
