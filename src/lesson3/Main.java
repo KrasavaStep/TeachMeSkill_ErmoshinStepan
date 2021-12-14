@@ -34,7 +34,7 @@ public class Main{
                     break;
                 case (3):
                     if (!on) System.out.println("Компьютер уже выключен");
-                    else offComputer(computer);
+                    else System.out.println((computer));
                     break;
                 case (4):
                     stop = false;

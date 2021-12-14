@@ -50,10 +50,12 @@ public class Computer{
         String conf = "";
         Scanner scanner = new Scanner(System.in);
 
+        int num = random();
+
         System.out.print("Введите через запятую - тип диска (HDD/SSD),объём(пример: 1000),брэнд(пример: ASUS): ");
         conf = scanner.nextLine();
         String[] elements = conf.split(",");
-        if (random() == 0)
+        if (num == 0)
             hdd = new Hdd(elements[0], Integer.parseInt(elements[1]), elements[2]);
         else
             hdd = new Hdd(elements[0],elements[2]);
@@ -61,7 +63,7 @@ public class Computer{
         System.out.print("Введите через запятую - тип RAM,объём(пример: 1000): ");
         conf = scanner.nextLine();
         elements = conf.split(",");
-        if (random() == 0)
+        if (num == 0)
             ram = new Ram(Integer.parseInt(elements[1]), elements[0]);
         else
             ram = new Ram(elements[0]);
@@ -69,7 +71,7 @@ public class Computer{
         System.out.print("Введите через запятую - частоту, количество ядер, кэш: ");
         conf = scanner.nextLine();
         elements = conf.split(",");
-        if (random() == 0)
+        if (num == 0)
             cpu = new Cpu(Integer.parseInt(elements[0]), Integer.parseInt(elements[1]), Integer.parseInt(elements[2]));
         else
             cpu = new Cpu();
