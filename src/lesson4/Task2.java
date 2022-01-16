@@ -12,7 +12,7 @@ package lesson4;
  */
 
 
-public class task2 {
+public class Task2 {
     public static void main(String[] args) {
         int minFromFour = getMinFromFour(14, 11, 10, 15);
         System.out.println(minFromFour);

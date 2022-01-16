@@ -9,7 +9,7 @@ import java.util.Scanner;
  * Напишите метод по переводу арабских чисел от 0 до 100 в римские используя данную мапу.
  */
 
-public class task3 {
+public class Task3 {
 
     final static Map<Integer, String> ROMANIAN_DIGITS = new HashMap<>();
     static {
