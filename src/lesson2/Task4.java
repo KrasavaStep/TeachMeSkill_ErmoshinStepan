@@ -1,10 +1,14 @@
 package lesson2;
 
+/**
+ * Выполнить все операции с числами записанными в двоичной форме.
+ */
+
 public class Task4 {
+
     public static void main(String[] args) {
         int first = 0b101;
         int second = 0b1010;
-
         int sum = first + second;
         int sub = first - second;
         int div = first / second;
