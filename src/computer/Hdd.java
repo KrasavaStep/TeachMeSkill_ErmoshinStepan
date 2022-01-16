@@ -53,9 +53,9 @@ public class Hdd implements ComputerMethods{
 
     private String setBrand(){
         int randomNumberForChoice;
-        String[] LIST_OF_BRANDS = {"ASUS", "HyperPC", "Kingston", "Other"};
+        String[] listOfBrands = {"ASUS", "HyperPC", "Kingston", "Other"};
 
         randomNumberForChoice = (int) Math.round( Math.random() * 4);
-        return LIST_OF_BRANDS[randomNumberForChoice];
+        return listOfBrands[randomNumberForChoice];
     }
 }
