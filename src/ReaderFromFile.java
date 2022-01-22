@@ -1,6 +1,10 @@
 import java.io.*;
 import java.util.ArrayList;
 
+/**
+ * Считать из файла числа, умножить их на 10, записать новые числа в файл
+ */
+
 public class ReaderFromFile {
     static ArrayList<String> digitsListStr = new ArrayList<>();
 
